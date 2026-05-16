@@ -1,8 +1,8 @@
-# Samsung Notes Style Student Hub
+# NoteFlow
 
 Bu proje, öğrencilerin notlarını, ders programlarını ve günlük görevlerini tek bir yerden yönetebileceği, **Samsung Notes** tasarım dilinden ilham alan, modern ve responsive bir web uygulamasıdır.
 
-> **Canlı Uygulama Linki:** (https://berreyazgi.github.io/NoteApplication/)
+> **Canlı Uygulama Linki:** 
 
 ## Özellikler
 
