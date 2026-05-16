@@ -1,65 +1,54 @@
-# NoteFlow
+# NoteFlow 
 
-Bu proje, öğrencilerin notlarını, ders programlarını ve günlük görevlerini tek bir yerden yönetebileceği, **Samsung Notes** tasarım dilinden ilham alan, modern ve responsive bir web uygulamasıdır.
+NoteFlow, öğrencilerin ders notlarını, günlük görevlerini ve akademik programlarını tek bir merkezden yönetebilmesi için tasarlanmış, **Samsung Notes** tasarım dilinden ve minimalist arayüzünden ilham alan modern bir web uygulamasıdır. 
 
-> **Canlı Uygulama Linki:** 
-
-## Özellikler
-
-* **Dinamik Dashboard:** Takvim, To-Do List ve Sticky Notes bileşenlerinden oluşan, tüm ekranı kaplayan ferah ana sayfa.
-* **Akıllı Klasörleme:** Notları kategorize etmek için tek seviyeli, hızlı erişilebilir klasör yapısı.
-* **Samsung Style Tasarım:** Geniş kartlar, yuvarlatılmış köşeler (`rounded-3xl`) ve minimalist arayüz.
-* **Full Responsive:** Mobil, tablet ve masaüstü cihazlar için optimize edilmiş `grid` yapısı.
-* **CRUD İşlemleri:** Klasör ve not oluşturma, düzenleme ve silme yetenekleri.
-* **Sürükle-Bırak Hazırlığı:** `@dnd-kit` altyapısı ile notları klasörlere taşıma desteği.
-
-## Kullanılan Teknolojiler
-
-* **Framework:** [React 19](https://www.google.com/search?q=https://react.dev/)
-* **Build Tool:** [Vite](https://www.google.com/search?q=https://vitejs.dev/)
-* **Styling:** [Tailwind CSS v4](https://www.google.com/search?q=https://tailwindcss.com/)
-* **Icons:** [Lucide React](https://www.google.com/search?q=https://lucide.dev/)
-* **Language:** [TypeScript](https://www.google.com/search?q=https://www.typescriptlang.org/)
+Bu proje, modern frontend geliştirme pratikleri, bileşen bazlı mimari ve kullanıcı dostu arayüz tasarımı ilkeleri doğrultusunda geliştirilmiştir.
 
 ---
 
-## Kurulum ve Çalıştırma
+## Canlı Demo 
+* **Canlı Uygulama Linki:** 
+---
 
-Projeyi yerel bilgisayarınızda çalıştırmak için şu adımları izleyin:
+## Fonksiyonel Gereksinimler
 
-1. **Depoyu Klonlayın:**
-```bash
-git clone https://github.com/kullanici-adiniz/todolist.git
-
-```
-
-
-2. **Bağımlılıkları Yükleyin:**
-```bash
-npm install
-
-```
-
-
-3. **Geliştirme Sunucusunu Başlatın:**
-```bash
-npm run dev
-
-```
-
-
-Tarayıcıda `http://localhost:5173` adresine giderek uygulamayı görebilirsiniz.
+* **Dinamik Dashboard:** Tek bir ekrandan tüm süreci yönetmeyi sağlayan Takvim, To-Do List ve Sticky Notes (Yapışkan Notlar) entegrasyonu.
+* **Akıllı Klasörleme Sistemi:** Notları karmaşadan uzak tutmak, derslere veya konulara göre kategorize etmek için hızlı erişilebilir tek seviyeli klasör yapısı.
+* **Samsung UI/UX Tasarım Dili:** Geniş kart tasarımları, gözü yormayan yumuşak renk paletleri, geniş yuvarlatılmış köşeler (`rounded-3xl`) ve ferah whitespace kullanımı.
+* **Tam CRUD Operasyonları:**
+  * **Ekleme (Create):** Dinamik modallar aracılığıyla yeni klasörler ve zengin içerikli notlar oluşturma.
+  * **Listeleme (Read):** Notların ve görevlerin Tailwind grid yapısıyla responsive olarak listelenmesi; kategorilere göre dinamik filtreleme.
+  * **Güncelleme (Update):** Oluşturulan notların içeriklerini, başlıklarını veya klasör bağlamlarını anlık olarak düzenleyebilme.
+  * **Silme (Delete):** Güvenli silme mekanizmaları ile süresi geçmiş notları, görevleri veya klasörleri sistemden kaldırma.
+* **Gelişmiş Responsive Yapı:** Mobil, tablet ve masaüstü ekran boyutları için tamamen optimize edilmiş pürüzsüz CSS Grid ve Flexbox mimarisi.
+* **Sürükle-Bırak Altyapısı:** Notların klasörler arasında taşınabilmesini destekleyen `@dnd-kit` entegrasyon hazırlığı.
 
 ---
 
-## Proje Yapısı
+## Kullanılan Teknolojiler ve Kütüphaneler
+
+* **Framework:** React 19 (En güncel kararlı sürüm)
+* **Build Tool:** Vite (Hızlı ve optimize geliştirme ortamı)
+* **Styling:** Tailwind CSS v4 (Yeni nesil utility-first CSS frameworkü)
+* **Icons:** Lucide React (Minimalist ve modern ikon seti)
+* **Language:** TypeScript (Tip güvenliği ve kurumsal kod kalitesi)
+
+---
+
+## Proje Yapısı 
+
+Yönergede belirtilen mimari standartlara uygun olarak kurgulanan klasör yapısı şu şekildedir:
 
 ```text
 src/
-├── components/     # UI Bileşenleri (Widgetlar, Kartlar)
-├── types/          # TypeScript Interface tanımları
-├── App.tsx         # Ana uygulama mantığı ve Layout
-├── index.css       # Tailwind v4 importları ve global stiller
+├── assets/         # Görseller, logolar ve statik kaynaklar
+├── components/     # UI Bileşenleri (Calendar, FolderCard, NoteEditor, Sidebar, TodoList vb.)
+├── context/        # Global State yönetimi ve Context API katmanı
+├── data/           # Mock veri setleri ve başlangıç konfigürasyonları
+├── hooks/          # Özel (Custom) React hook tanımlamaları
+├── Interfaces/     # TypeScript arayüz tanımlamaları (Klasör, Not ve Görev modelleri)
+├── pages/          # Sayfa bileşenleri ve ana görünümler (Dashboard)
+├── App.css         # Uygulamaya özel stil özelleştirmeleri
+├── App.tsx         # Ana uygulama bileşeni ve layout kurgusu
+├── index.css       # Tailwind v4 importları ve global temel stiller
 └── main.tsx        # React giriş noktası
-
-```
