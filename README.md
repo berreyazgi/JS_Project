@@ -1,4 +1,4 @@
-# NoteFlow 
+# Note Application
 
 NoteFlow, öğrencilerin ders notlarını, günlük görevlerini ve akademik programlarını tek bir merkezden yönetebilmesi için tasarlanmış, **Samsung Notes** tasarım dilinden ve minimalist arayüzünden ilham alan modern bir web uygulamasıdır. 
 
@@ -7,7 +7,7 @@ Bu proje, modern frontend geliştirme pratikleri, bileşen bazlı mimari ve kull
 ---
 
 ## Canlı Demo 
-* **Canlı Uygulama Linki:** 
+* **Canlı Uygulama Linki:** https://neon-tulumba-87493f.netlify.app/
 ---
 
 ## Fonksiyonel Gereksinimler
