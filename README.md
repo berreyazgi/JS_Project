@@ -12,14 +12,14 @@ Projeyi incelemek için giriş yapmak yerine "Continue as Guest" butonu ile giri
 
 ## Fonksiyonel Gereksinimler
 
-* **Dinamik Dashboard:** Tek bir ekrandan tüm süreci yönetmeyi sağlayan Takvim, To-Do List ve Sticky Notes (Yapışkan Notlar) entegrasyonu.
-* **Akıllı Klasörleme Sistemi:** Notları karmaşadan uzak tutmak, derslere veya konulara göre kategorize etmek için hızlı erişilebilir tek seviyeli klasör yapısı.
-* **Samsung UI/UX Tasarım Dili:** Geniş kart tasarımları, gözü yormayan yumuşak renk paletleri, geniş yuvarlatılmış köşeler (`rounded-3xl`) ve ferah whitespace kullanımı.
+* **Dinamik Dashboard:** Tek bir ekrandan tüm süreci yönetmeyi sağlayan Takvim, To-Do List ve Sticky Notes entegrasyonu.
+* **Akıllı Klasörleme Sistemi:** Notları derslere veya konulara göre kategorize etmek için hızlı erişilebilir tek seviyeli klasör yapısı.
+* **UI/UX Tasarım Dili:** Geniş kart tasarımları, gözü yormayan yumuşak renk paletleri, geniş yuvarlatılmış köşeler (`rounded-3xl`) ve ferah whitespace kullanımı.
 * **Tam CRUD Operasyonları:**
-  * **Ekleme (Create):** Dinamik modallar aracılığıyla yeni klasörler ve zengin içerikli notlar oluşturma.
-  * **Listeleme (Read):** Notların ve görevlerin Tailwind grid yapısıyla responsive olarak listelenmesi; kategorilere göre dinamik filtreleme.
-  * **Güncelleme (Update):** Oluşturulan notların içeriklerini, başlıklarını veya klasör bağlamlarını anlık olarak düzenleyebilme.
-  * **Silme (Delete):** Güvenli silme mekanizmaları ile süresi geçmiş notları, görevleri veya klasörleri sistemden kaldırma.
+  * **Ekleme:** Dinamik modallar aracılığıyla yeni klasörler ve zengin içerikli notlar oluşturma.
+  * **Listeleme:** Notların ve görevlerin Tailwind grid yapısıyla responsive olarak listelenmesi; kategorilere göre dinamik filtreleme.
+  * **Güncelleme:** Oluşturulan notların içeriklerini, başlıklarını veya klasör bağlamlarını anlık olarak düzenleyebilme.
+  * **Silme:** Güvenli silme mekanizmaları ile süresi geçmiş notları, görevleri veya klasörleri sistemden kaldırma.
 * **Gelişmiş Responsive Yapı:** Mobil, tablet ve masaüstü ekran boyutları için tamamen optimize edilmiş pürüzsüz CSS Grid ve Flexbox mimarisi.
 * **Sürükle-Bırak Altyapısı:** Notların klasörler arasında taşınabilmesini destekleyen `@dnd-kit` entegrasyon hazırlığı.
 
@@ -27,17 +27,14 @@ Projeyi incelemek için giriş yapmak yerine "Continue as Guest" butonu ile giri
 
 ## Kullanılan Teknolojiler ve Kütüphaneler
 
-* **Framework:** React 19 (En güncel kararlı sürüm)
-* **Build Tool:** Vite (Hızlı ve optimize geliştirme ortamı)
-* **Styling:** Tailwind CSS v4 (Yeni nesil utility-first CSS frameworkü)
-* **Icons:** Lucide React (Minimalist ve modern ikon seti)
-* **Language:** TypeScript (Tip güvenliği ve kurumsal kod kalitesi)
+* **Framework:** React 19 
+* **Build Tool:** Vite 
+* **Styling:** Tailwind CSS 
+* **Language:** TypeScript 
 
 ---
 
 ## Proje Yapısı 
-
-Yönergede belirtilen mimari standartlara uygun olarak kurgulanan klasör yapısı şu şekildedir:
 
 ```text
 src/
